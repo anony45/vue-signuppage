@@ -25,7 +25,15 @@ const routes = [{
         name: 'forgot-password',
         component: () =>
             import ('../components/forgotpass.vue')
-    }
+    },
+    {
+        path: '/headerHeader',
+        name: 'headerHeader',
+        component: () =>
+            import ('../components/headerHeader.vue')
+    },
+
+
 
 ]
 

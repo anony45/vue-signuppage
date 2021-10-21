@@ -13,6 +13,8 @@
           <li class="nav-item">
             <router-link class="btn btn-outline-primary" to="/">Sign up</router-link>
           </li>
+       
+
         </ul>
       </div>
     </nav>
