@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="top_container">
-<h1 :heading="{value:'My Title'}"></h1>
+<h1>{{title}}</h1>
+<h2>{{subtitle}}</h2>
     
   </div>
 </template>
@@ -9,16 +10,8 @@
 export default {
   name: 'app',
   props:{
-    heading:{
-        type:Object,
-        default(){
-            return {
-                value:'A Default Title',
-                icon: 'fa-user', 
-                number: 0 
-            }
-        }
-    }
+  title:{ required: true, type: String },
+  subtitle:{ required: true, type: String }
 },
 }
 

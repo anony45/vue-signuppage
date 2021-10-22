@@ -3,7 +3,8 @@
         <form @submit.prevent="handleSubmit">
             <h3>Sign Up</h3>
            
-           <headerHeader></headerHeader>
+           <headerHeader title="my title"/>
+           <headerHeader subtitle="my title"/>
 
             <div class="form-group">
                 <label>First Name</label>
@@ -77,6 +78,8 @@ import { required, email, minLength, sameAs } from "vuelidate/lib/validators";
     
         data() {
             return {
+                title:"my title",
+                subtitle:"subtitle",
                 user: {
                     firstName: "",
                     lastName: "",
